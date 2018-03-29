@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: fr.vsct.tock:bot-toolkit:0.9.3-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/fr/vsct/tock/bot-toolkit/0.9.3-SNAPSHOT/bot-toolkit-0.9.3-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/fr/vsct/tock/bot-toolkit/0.9.3-SNAPSHOT/bot-toolkit-0.9.3-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/fr/vsct/tock/bot-toolkit/0.9.3-SNAPSHOT/bot-toolkit-0.9.3-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
