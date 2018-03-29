@@ -3295,3 +3295,270 @@ com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to con
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 2018-03-29T11:56:08.886 [vert.x-worker-thread-3] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+2018-03-29T14:52:09.603 [main] INFO  fr.vsct.tock.shared.jackson.Jackson - init jackson mapper
+2018-03-29T14:52:10.875 [main] DEBUG fr.vsct.tock.bot.BotIoc - Start bot injection
+2018-03-29T14:52:11.173 [main] INFO  fr.vsct.tock.shared.Mongo - get database tock_bot
+2018-03-29T14:52:11.176 [main] INFO  fr.vsct.tock.shared.Mongo - init mongo jackson mapper with additional modules [com.fasterxml.jackson.databind.module.SimpleModule@130c12b7]
+2018-03-29T14:52:12.324 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-03-29T14:52:12.565 [main] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+2018-03-29T14:52:12.637 [cluster-ClusterId{value='5abce17cedac5f7d11a86245', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+2018-03-29T14:52:12.645 [cluster-ClusterId{value='5abce17cedac5f7d11a86245', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 3]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4166455}
+2018-03-29T14:52:12.685 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2018-03-29T14:52:13.538 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(messenger) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@1917d90f)
+2018-03-29T14:53:47.170 [main] INFO  fr.vsct.tock.shared.jackson.Jackson - init jackson mapper
+2018-03-29T14:53:48.073 [main] DEBUG fr.vsct.tock.bot.BotIoc - Start bot injection
+2018-03-29T14:53:48.381 [main] INFO  fr.vsct.tock.shared.Mongo - get database tock_bot
+2018-03-29T14:53:48.382 [main] INFO  fr.vsct.tock.shared.Mongo - init mongo jackson mapper with additional modules [com.fasterxml.jackson.databind.module.SimpleModule@130c12b7]
+2018-03-29T14:54:11.406 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-03-29T14:54:11.692 [main] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+2018-03-29T14:54:11.766 [cluster-ClusterId{value='5abce1f3edac5f7d6c5c5d38', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:9}] to localhost:27017
+2018-03-29T14:54:11.785 [cluster-ClusterId{value='5abce1f3edac5f7d6c5c5d38', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 3]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=16218491}
+2018-03-29T14:54:11.872 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:10}] to localhost:27017
+2018-03-29T14:54:18.275 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(messenger) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@1917d90f)
+2018-03-29T14:54:27.504 [main] INFO  fr.vsct.tock.bot.engine.config.BotConfigurationSynchronizer - start bot configuration synchronizer
+2018-03-29T14:54:29.401 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(rest) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@1917d90f)
+2018-03-29T14:54:29.402 [main] INFO  fr.vsct.tock.bot.connector.rest.RestConnector - deploy rest connector to /rest/rest-Please specify facebook page id
+2018-03-29T14:54:29.420 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(ga) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@1917d90f)
+2018-03-29T14:54:29.427 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(rest) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@1917d90f)
+2018-03-29T14:54:29.428 [main] INFO  fr.vsct.tock.bot.connector.rest.RestConnector - deploy rest connector to /rest/rest-test-bot
+2018-03-29T14:54:29.455 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(slack) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@1917d90f)
+2018-03-29T14:54:29.669 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(rest) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@1917d90f)
+2018-03-29T14:54:29.670 [main] INFO  fr.vsct.tock.bot.connector.rest.RestConnector - deploy rest connector to /rest/rest-test-bot
+2018-03-29T14:54:29.670 [main] DEBUG fr.vsct.tock.bot.engine.BotVerticle - path /rest/rest-test-bot already registered - skip
+2018-03-29T14:54:30.317 [vert.x-worker-thread-0] INFO  fr.vsct.tock.bot.connector.messenger.MessengerConnector - deploy rest messenger connector services for root path /messenger 
+2018-03-29T14:54:30.333 [vert.x-worker-thread-0] INFO  fr.vsct.tock.bot.connector.ga.GAConnector - deploy rest google assistant services for root path /ga/test-bot 
+2018-03-29T14:54:30.672 [vert.x-eventloop-thread-1] INFO  fr.vsct.tock.bot.engine.BotVerticle - BotVerticle started on port 8181
+2018-03-29T15:18:40.858 [main] INFO  fr.vsct.tock.shared.jackson.Jackson - init jackson mapper
+2018-03-29T15:18:41.595 [main] DEBUG fr.vsct.tock.bot.BotIoc - Start bot injection
+2018-03-29T15:18:41.764 [main] INFO  fr.vsct.tock.shared.Mongo - get database tock_bot
+2018-03-29T15:18:41.767 [main] INFO  fr.vsct.tock.shared.Mongo - init mongo jackson mapper with additional modules [com.fasterxml.jackson.databind.module.SimpleModule@130c12b7]
+2018-03-29T15:18:43.027 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-03-29T15:18:43.302 [main] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+2018-03-29T15:18:43.346 [cluster-ClusterId{value='5abce7b3edac5f041e8e0f4e', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:12}] to localhost:27017
+2018-03-29T15:18:43.360 [cluster-ClusterId{value='5abce7b3edac5f041e8e0f4e', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 3]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8947837}
+2018-03-29T15:18:43.446 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:13}] to localhost:27017
+2018-03-29T15:18:44.110 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(messenger) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@21fff664)
+2018-03-29T15:18:46.960 [main] INFO  fr.vsct.tock.bot.engine.config.BotConfigurationSynchronizer - start bot configuration synchronizer
+2018-03-29T15:18:47.480 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(rest) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@21fff664)
+2018-03-29T15:18:47.482 [main] INFO  fr.vsct.tock.bot.connector.rest.RestConnector - deploy rest connector to /rest/rest-Please specify facebook page id
+2018-03-29T15:18:47.515 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(ga) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@21fff664)
+2018-03-29T15:18:47.525 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(rest) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@21fff664)
+2018-03-29T15:18:47.526 [main] INFO  fr.vsct.tock.bot.connector.rest.RestConnector - deploy rest connector to /rest/rest-ga_test-bot
+2018-03-29T15:18:47.548 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(slack) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@21fff664)
+2018-03-29T15:18:47.559 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(rest) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@21fff664)
+2018-03-29T15:18:47.560 [main] INFO  fr.vsct.tock.bot.connector.rest.RestConnector - deploy rest connector to /rest/rest-test-bot
+2018-03-29T15:18:47.715 [vert.x-worker-thread-0] INFO  fr.vsct.tock.bot.connector.messenger.MessengerConnector - deploy rest messenger connector services for root path /messenger 
+2018-03-29T15:18:47.722 [vert.x-worker-thread-0] INFO  fr.vsct.tock.bot.connector.ga.GAConnector - deploy rest google assistant services for root path /ga/ga_test-bot 
+2018-03-29T15:18:48.053 [vert.x-eventloop-thread-1] INFO  fr.vsct.tock.bot.engine.BotVerticle - BotVerticle started on port 8181
+2018-03-29T15:20:22.712 [vert.x-worker-thread-10] DEBUG fr.vsct.tock.bot.definition.EventListenerBase - listen event bonjour
+2018-03-29T15:20:22.717 [vert.x-worker-thread-10] DEBUG fr.vsct.tock.bot.engine.TockConnectorController - try to lock PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null)
+2018-03-29T15:20:22.797 [vert.x-worker-thread-10] DEBUG fr.vsct.tock.bot.mongo.MongoUserLock - lock user : test_5abce205edac5f7d6c5c5d3c_fr
+2018-03-29T15:20:22.805 [vert.x-worker-thread-10] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - no timeline for user PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null)
+2018-03-29T15:20:22.889 [vert.x-worker-thread-10] DEBUG fr.vsct.tock.bot.engine.nlp.Nlp - Parse sentence : bonjour
+2018-03-29T15:20:22.900 [vert.x-worker-thread-10] DEBUG fr.vsct.tock.bot.engine.nlp.Nlp - Sending sentence 'bonjour' to NLP
+2018-03-29T15:20:29.709 [vert.x-worker-thread-10] DEBUG fr.vsct.tock.bot.engine.TockConnectorController - message sent to connector: Sorry, I didn't understand :(
+2018-03-29T15:20:29.798 [vert.x-worker-thread-10] DEBUG fr.vsct.tock.bot.connector.rest.RestConnectorCallback - response : {"messages":[{"text":"Sorry, I didn't understand :(","messages":[],"delay":0,"eventType":"sentence","simpleMessage":true}]}
+2018-03-29T15:20:29.804 [vert.x-worker-thread-10] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - start to save timeline UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:20:29.809 [vert.x-worker-thread-10] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - load old timeline UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:20:29.817 [vert.x-worker-thread-10] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - create new timeline UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:20:30.019 [vert.x-worker-thread-10] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - timeline saved UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:20:30.049 [vert.x-worker-thread-10] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - dialog to save created UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:20:30.892 [vert.x-worker-thread-10] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - dialog saved UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:20:30.895 [vert.x-worker-thread-10] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - end saving timeline UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:20:30.896 [vert.x-worker-thread-10] DEBUG fr.vsct.tock.bot.mongo.MongoUserLock - release lock for user : test_5abce205edac5f7d6c5c5d3c_fr
+2018-03-29T15:20:30.975 [vert.x-worker-thread-12] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:15}] to localhost:27017
+2018-03-29T15:20:35.946 [vert.x-worker-thread-13] DEBUG fr.vsct.tock.bot.definition.EventListenerBase - listen event Bonjour
+2018-03-29T15:20:35.946 [vert.x-worker-thread-13] DEBUG fr.vsct.tock.bot.engine.TockConnectorController - try to lock PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null)
+2018-03-29T15:20:35.949 [vert.x-worker-thread-13] DEBUG fr.vsct.tock.bot.mongo.MongoUserLock - lock user : test_5abce205edac5f7d6c5c5d3c_fr
+2018-03-29T15:20:36.093 [vert.x-worker-thread-13] DEBUG fr.vsct.tock.bot.engine.nlp.Nlp - Parse sentence : Bonjour
+2018-03-29T15:20:36.094 [vert.x-worker-thread-13] DEBUG fr.vsct.tock.bot.engine.nlp.Nlp - Sending sentence 'Bonjour' to NLP
+2018-03-29T15:20:36.204 [vert.x-worker-thread-13] DEBUG fr.vsct.tock.bot.engine.TockConnectorController - message sent to connector: Bienvenue sur le test du bot
+2018-03-29T15:20:36.216 [vert.x-worker-thread-13] DEBUG fr.vsct.tock.bot.engine.TockConnectorController - message sent to connector: C'est un bot de test du framework Tock : https://github.com/voyages-sncf-technologies/tock
+2018-03-29T15:20:36.260 [vert.x-worker-thread-13] DEBUG fr.vsct.tock.bot.engine.TockConnectorController - message sent to connector: [SlackMessageOut(text=Il peut se connecter sur Slack! :smile:, channel=null)]
+2018-03-29T15:20:36.269 [vert.x-worker-thread-13] DEBUG fr.vsct.tock.bot.connector.rest.RestConnectorCallback - response : {"messages":[{"text":"Bienvenue sur le test du bot","messages":[],"delay":0,"eventType":"sentence","simpleMessage":true},{"text":"C'est un bot de test du framework Tock : https://github.com/voyages-sncf-technologies/tock","messages":[],"delay":0,"eventType":"sentence","simpleMessage":true},{"messages":[{"connectorType":{"id":"slack","userInterfaceType":"textChat"},"attachments":[],"choices":[],"texts":{},"locations":[],"metadata":{},"subElements":[]}],"delay":0,"eventType":"sentence","simpleMessage":false}]}
+2018-03-29T15:20:36.272 [vert.x-worker-thread-13] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - start to save timeline UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:20:36.279 [vert.x-worker-thread-13] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - load old timeline UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:20:36.280 [vert.x-worker-thread-13] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - create new timeline UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:20:36.288 [vert.x-worker-thread-13] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - timeline saved UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:20:36.288 [vert.x-worker-thread-13] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - dialog to save created UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:20:36.298 [vert.x-worker-thread-13] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - dialog saved UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:20:36.299 [vert.x-worker-thread-13] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - end saving timeline UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:20:36.300 [vert.x-worker-thread-13] DEBUG fr.vsct.tock.bot.mongo.MongoUserLock - release lock for user : test_5abce205edac5f7d6c5c5d3c_fr
+2018-03-29T15:21:49.857 [vert.x-worker-thread-3] DEBUG fr.vsct.tock.bot.definition.EventListenerBase - listen event bonjour
+2018-03-29T15:21:49.857 [vert.x-worker-thread-3] DEBUG fr.vsct.tock.bot.engine.TockConnectorController - try to lock PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null)
+2018-03-29T15:21:49.861 [vert.x-worker-thread-3] DEBUG fr.vsct.tock.bot.mongo.MongoUserLock - lock user : test_5abce205edac5f7d6c5c5d3c_fr
+2018-03-29T15:21:49.912 [vert.x-worker-thread-3] DEBUG fr.vsct.tock.bot.engine.nlp.Nlp - Parse sentence : bonjour
+2018-03-29T15:21:49.912 [vert.x-worker-thread-3] DEBUG fr.vsct.tock.bot.engine.nlp.Nlp - Sending sentence 'bonjour' to NLP
+2018-03-29T15:21:49.975 [vert.x-worker-thread-3] DEBUG fr.vsct.tock.bot.engine.TockConnectorController - message sent to connector: Bienvenue sur le test du bot
+2018-03-29T15:21:49.985 [vert.x-worker-thread-3] DEBUG fr.vsct.tock.bot.engine.TockConnectorController - message sent to connector: C'est un bot de test du framework Tock : https://github.com/voyages-sncf-technologies/tock
+2018-03-29T15:21:49.990 [vert.x-worker-thread-3] DEBUG fr.vsct.tock.bot.engine.TockConnectorController - message sent to connector: [SlackMessageOut(text=Il peut se connecter sur Slack! :smile:, channel=null)]
+2018-03-29T15:21:49.991 [vert.x-worker-thread-3] DEBUG fr.vsct.tock.bot.connector.rest.RestConnectorCallback - response : {"messages":[{"text":"Bienvenue sur le test du bot","messages":[],"delay":0,"eventType":"sentence","simpleMessage":true},{"text":"C'est un bot de test du framework Tock : https://github.com/voyages-sncf-technologies/tock","messages":[],"delay":0,"eventType":"sentence","simpleMessage":true},{"messages":[{"connectorType":{"id":"slack","userInterfaceType":"textChat"},"attachments":[],"choices":[],"texts":{},"locations":[],"metadata":{},"subElements":[]}],"delay":0,"eventType":"sentence","simpleMessage":false}]}
+2018-03-29T15:21:49.996 [vert.x-worker-thread-3] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - start to save timeline UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:21:50.005 [vert.x-worker-thread-3] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - load old timeline UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:21:50.006 [vert.x-worker-thread-3] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - create new timeline UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:21:50.014 [vert.x-worker-thread-3] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - timeline saved UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:21:50.015 [vert.x-worker-thread-3] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - dialog to save created UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:21:50.037 [vert.x-worker-thread-3] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - dialog saved UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:21:50.037 [vert.x-worker-thread-3] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - end saving timeline UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:21:50.037 [vert.x-worker-thread-3] DEBUG fr.vsct.tock.bot.mongo.MongoUserLock - release lock for user : test_5abce205edac5f7d6c5c5d3c_fr
+2018-03-29T15:24:53.805 [main] INFO  fr.vsct.tock.shared.jackson.Jackson - init jackson mapper
+2018-03-29T15:24:54.492 [main] DEBUG fr.vsct.tock.bot.BotIoc - Start bot injection
+2018-03-29T15:24:54.662 [main] INFO  fr.vsct.tock.shared.Mongo - get database tock_bot
+2018-03-29T15:24:54.665 [main] INFO  fr.vsct.tock.shared.Mongo - init mongo jackson mapper with additional modules [com.fasterxml.jackson.databind.module.SimpleModule@130c12b7]
+2018-03-29T15:24:56.197 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-03-29T15:24:56.367 [main] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+2018-03-29T15:24:56.394 [cluster-ClusterId{value='5abce928edac5f056656c58b', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:16}] to localhost:27017
+2018-03-29T15:24:56.403 [cluster-ClusterId{value='5abce928edac5f056656c58b', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 3]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5864804}
+2018-03-29T15:24:56.441 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:17}] to localhost:27017
+2018-03-29T15:24:57.116 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(messenger) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@1917d90f)
+2018-03-29T15:24:59.496 [main] INFO  fr.vsct.tock.bot.engine.config.BotConfigurationSynchronizer - start bot configuration synchronizer
+2018-03-29T15:25:00.204 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(rest) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@1917d90f)
+2018-03-29T15:25:00.205 [main] INFO  fr.vsct.tock.bot.connector.rest.RestConnector - deploy rest connector to /rest/rest-Please specify facebook page id
+2018-03-29T15:25:04.947 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(ga) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@1917d90f)
+2018-03-29T15:25:05.968 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(rest) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@1917d90f)
+2018-03-29T15:25:05.969 [main] INFO  fr.vsct.tock.bot.connector.rest.RestConnector - deploy rest connector to /rest/rest-test-bot
+2018-03-29T15:25:09.473 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(slack) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@1917d90f)
+2018-03-29T15:25:12.686 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(rest) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@1917d90f)
+2018-03-29T15:25:12.686 [main] INFO  fr.vsct.tock.bot.connector.rest.RestConnector - deploy rest connector to /rest/rest-slacktest-bot
+2018-03-29T15:25:14.937 [vert.x-worker-thread-1] INFO  fr.vsct.tock.bot.connector.messenger.MessengerConnector - deploy rest messenger connector services for root path /messenger 
+2018-03-29T15:25:14.943 [vert.x-worker-thread-1] INFO  fr.vsct.tock.bot.connector.ga.GAConnector - deploy rest google assistant services for root path /ga/test-bot 
+2018-03-29T15:25:17.009 [vert.x-eventloop-thread-1] INFO  fr.vsct.tock.bot.engine.BotVerticle - BotVerticle started on port 8181
+2018-03-29T15:25:52.095 [vert.x-worker-thread-5] DEBUG fr.vsct.tock.bot.definition.EventListenerBase - listen event Bonjour
+2018-03-29T15:25:52.099 [vert.x-worker-thread-5] DEBUG fr.vsct.tock.bot.engine.TockConnectorController - try to lock PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null)
+2018-03-29T15:25:52.118 [vert.x-worker-thread-5] DEBUG fr.vsct.tock.bot.mongo.MongoUserLock - lock user : test_5abce205edac5f7d6c5c5d3c_fr
+2018-03-29T15:25:52.637 [vert.x-worker-thread-5] DEBUG fr.vsct.tock.bot.engine.nlp.Nlp - Parse sentence : Bonjour
+2018-03-29T15:25:52.644 [vert.x-worker-thread-5] DEBUG fr.vsct.tock.bot.engine.nlp.Nlp - Sending sentence 'Bonjour' to NLP
+2018-03-29T15:25:53.474 [vert.x-worker-thread-5] DEBUG fr.vsct.tock.bot.engine.TockConnectorController - message sent to connector: Bienvenue sur le test du bot
+2018-03-29T15:25:53.479 [vert.x-worker-thread-5] DEBUG fr.vsct.tock.bot.engine.TockConnectorController - message sent to connector: C'est un bot de test du framework Tock : https://github.com/voyages-sncf-technologies/tock
+2018-03-29T15:25:53.813 [vert.x-worker-thread-5] DEBUG fr.vsct.tock.bot.engine.TockConnectorController - message sent to connector: [GAResponseConnectorMessage(expectUserResponse=true, expectedInputs=[GAExpectedInput(inputPrompt=GAInputPrompt(richInitialPrompt=GARichResponse(items=[GAItem(simpleResponse=GASimpleResponse(textToSpeech=Il peut se connecter au Google Assistant, ssml=null, displayText=null), basicCard=null, structuredResponse=null)], suggestions=[GASuggestion(title=Bonjour)], linkOutSuggestion=null), noInputPrompts=[]), possibleIntents=[GAExpectedIntent(intent=text, inputValueData=null)], speechBiasingHints=[])], finalResponse=null, customPushMessage=null)]
+2018-03-29T15:25:53.867 [vert.x-worker-thread-5] DEBUG fr.vsct.tock.bot.connector.rest.RestConnectorCallback - response : {"messages":[{"text":"Bienvenue sur le test du bot","messages":[],"delay":0,"eventType":"sentence","simpleMessage":true},{"text":"C'est un bot de test du framework Tock : https://github.com/voyages-sncf-technologies/tock","messages":[],"delay":0,"eventType":"sentence","simpleMessage":true},{"messages":[{"connectorType":{"id":"NONE","userInterfaceType":"textChat"},"attachments":[],"choices":[],"texts":{"textToSpeech":"Il peut se connecter au Google Assistant","suggestion0":"Bonjour"},"locations":[],"metadata":{},"subElements":[]}],"delay":0,"eventType":"sentence","simpleMessage":false}]}
+2018-03-29T15:25:53.880 [vert.x-worker-thread-5] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - start to save timeline UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:25:53.887 [vert.x-worker-thread-5] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - load old timeline UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:25:53.888 [vert.x-worker-thread-5] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - create new timeline UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:25:53.930 [vert.x-worker-thread-5] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - timeline saved UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:25:53.932 [vert.x-worker-thread-5] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - dialog to save created UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:25:54.265 [vert.x-worker-thread-5] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - dialog saved UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:25:54.267 [vert.x-worker-thread-5] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - end saving timeline UserTimeline(playerId=PlayerId(id=test_5abce205edac5f7d6c5c5d3c_fr, type=user, clientId=null))
+2018-03-29T15:25:54.268 [vert.x-worker-thread-5] DEBUG fr.vsct.tock.bot.mongo.MongoUserLock - release lock for user : test_5abce205edac5f7d6c5c5d3c_fr
+2018-03-29T15:25:54.293 [vert.x-worker-thread-5] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:18}] to localhost:27017
+2018-03-29T15:26:00.097 [vert.x-worker-thread-8] DEBUG fr.vsct.tock.bot.definition.EventListenerBase - listen event Bonjour
+2018-03-29T15:26:00.098 [vert.x-worker-thread-8] DEBUG fr.vsct.tock.bot.engine.TockConnectorController - try to lock PlayerId(id=test_5abce938edac5f056656c591_fr, type=user, clientId=null)
+2018-03-29T15:26:00.118 [vert.x-worker-thread-8] DEBUG fr.vsct.tock.bot.mongo.MongoUserLock - lock user : test_5abce938edac5f056656c591_fr
+2018-03-29T15:26:00.122 [vert.x-worker-thread-8] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - no timeline for user PlayerId(id=test_5abce938edac5f056656c591_fr, type=user, clientId=null)
+2018-03-29T15:26:00.127 [vert.x-worker-thread-8] DEBUG fr.vsct.tock.bot.engine.nlp.Nlp - Parse sentence : Bonjour
+2018-03-29T15:26:00.128 [vert.x-worker-thread-8] DEBUG fr.vsct.tock.bot.engine.nlp.Nlp - Sending sentence 'Bonjour' to NLP
+2018-03-29T15:26:00.178 [vert.x-worker-thread-8] DEBUG fr.vsct.tock.bot.engine.TockConnectorController - message sent to connector: Bienvenue sur le test du bot
+2018-03-29T15:26:00.179 [vert.x-worker-thread-8] DEBUG fr.vsct.tock.bot.engine.TockConnectorController - message sent to connector: C'est un bot de test du framework Tock : https://github.com/voyages-sncf-technologies/tock
+2018-03-29T15:26:00.188 [vert.x-worker-thread-8] DEBUG fr.vsct.tock.bot.engine.TockConnectorController - message sent to connector: [SlackMessageOut(text=Il peut se connecter sur Slack! :smile:, channel=null)]
+2018-03-29T15:26:00.190 [vert.x-worker-thread-8] DEBUG fr.vsct.tock.bot.connector.rest.RestConnectorCallback - response : {"messages":[{"text":"Bienvenue sur le test du bot","messages":[],"delay":0,"eventType":"sentence","simpleMessage":true},{"text":"C'est un bot de test du framework Tock : https://github.com/voyages-sncf-technologies/tock","messages":[],"delay":0,"eventType":"sentence","simpleMessage":true},{"messages":[{"connectorType":{"id":"slack","userInterfaceType":"textChat"},"attachments":[],"choices":[],"texts":{},"locations":[],"metadata":{},"subElements":[]}],"delay":0,"eventType":"sentence","simpleMessage":false}]}
+2018-03-29T15:26:00.193 [vert.x-worker-thread-8] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - start to save timeline UserTimeline(playerId=PlayerId(id=test_5abce938edac5f056656c591_fr, type=user, clientId=null))
+2018-03-29T15:26:00.199 [vert.x-worker-thread-8] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - load old timeline UserTimeline(playerId=PlayerId(id=test_5abce938edac5f056656c591_fr, type=user, clientId=null))
+2018-03-29T15:26:00.199 [vert.x-worker-thread-8] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - create new timeline UserTimeline(playerId=PlayerId(id=test_5abce938edac5f056656c591_fr, type=user, clientId=null))
+2018-03-29T15:26:00.209 [vert.x-worker-thread-8] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - timeline saved UserTimeline(playerId=PlayerId(id=test_5abce938edac5f056656c591_fr, type=user, clientId=null))
+2018-03-29T15:26:00.209 [vert.x-worker-thread-8] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - dialog to save created UserTimeline(playerId=PlayerId(id=test_5abce938edac5f056656c591_fr, type=user, clientId=null))
+2018-03-29T15:26:00.249 [vert.x-worker-thread-8] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - dialog saved UserTimeline(playerId=PlayerId(id=test_5abce938edac5f056656c591_fr, type=user, clientId=null))
+2018-03-29T15:26:00.252 [vert.x-worker-thread-8] DEBUG fr.vsct.tock.bot.mongo.UserTimelineMongoDAO - end saving timeline UserTimeline(playerId=PlayerId(id=test_5abce938edac5f056656c591_fr, type=user, clientId=null))
+2018-03-29T15:26:00.252 [vert.x-worker-thread-8] DEBUG fr.vsct.tock.bot.mongo.MongoUserLock - release lock for user : test_5abce938edac5f056656c591_fr
+2018-03-29T16:16:40.180 [main] INFO  fr.vsct.tock.shared.jackson.Jackson - init jackson mapper
+2018-03-29T16:16:40.840 [main] DEBUG fr.vsct.tock.bot.BotIoc - Start bot injection
+2018-03-29T16:16:40.990 [main] INFO  fr.vsct.tock.shared.Mongo - get database tock_bot
+2018-03-29T16:16:40.992 [main] INFO  fr.vsct.tock.shared.Mongo - init mongo jackson mapper with additional modules [com.fasterxml.jackson.databind.module.SimpleModule@5b799640]
+2018-03-29T16:16:42.239 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-03-29T16:16:42.316 [cluster-ClusterId{value='5abcf54ae4e4580f664132a9', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:62)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:114)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.net.ConnectException: Connexion refusée (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:400)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:243)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:225)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:402)
+	at java.base/java.net.Socket.connect(Socket.java:591)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:59)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:57)
+	... 3 common frames omitted
+2018-03-29T16:16:42.365 [main] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+2018-03-29T16:19:14.879 [main] INFO  fr.vsct.tock.shared.jackson.Jackson - init jackson mapper
+2018-03-29T16:19:15.706 [main] DEBUG fr.vsct.tock.bot.BotIoc - Start bot injection
+2018-03-29T16:19:15.817 [main] INFO  fr.vsct.tock.shared.Mongo - get database tock_bot
+2018-03-29T16:19:15.819 [main] INFO  fr.vsct.tock.shared.Mongo - init mongo jackson mapper with additional modules [com.fasterxml.jackson.databind.module.SimpleModule@5b799640]
+2018-03-29T16:19:16.782 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-03-29T16:19:17.006 [main] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+2018-03-29T16:19:17.015 [cluster-ClusterId{value='5abcf5e443dfe013408eeea7', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+2018-03-29T16:19:17.023 [cluster-ClusterId{value='5abcf5e443dfe013408eeea7', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 3]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5548105}
+2018-03-29T16:19:17.104 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2018-03-29T16:19:17.745 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(messenger) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@a50ae65)
+2018-03-29T16:19:20.148 [main] INFO  fr.vsct.tock.bot.engine.config.BotConfigurationSynchronizer - start bot configuration synchronizer
+2018-03-29T16:19:20.639 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(rest) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@a50ae65)
+2018-03-29T16:19:20.640 [main] INFO  fr.vsct.tock.bot.connector.rest.RestConnector - deploy rest connector to /rest/rest-Please specify facebook page id
+2018-03-29T16:19:20.746 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(ga) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@a50ae65)
+2018-03-29T16:19:20.756 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(rest) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@a50ae65)
+2018-03-29T16:19:20.757 [main] INFO  fr.vsct.tock.bot.connector.rest.RestConnector - deploy rest connector to /rest/rest-test-bot
+2018-03-29T16:19:20.777 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(slack) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@a50ae65)
+2018-03-29T16:19:20.786 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(rest) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@a50ae65)
+2018-03-29T16:19:20.787 [main] INFO  fr.vsct.tock.bot.connector.rest.RestConnector - deploy rest connector to /rest/rest-slacktest-bot
+2018-03-29T16:19:20.884 [vert.x-worker-thread-0] INFO  fr.vsct.tock.bot.connector.messenger.MessengerConnector - deploy rest messenger connector services for root path /messenger 
+2018-03-29T16:19:20.890 [vert.x-worker-thread-0] INFO  fr.vsct.tock.bot.connector.ga.GAConnector - deploy rest google assistant services for root path /ga/test-bot 
+2018-03-29T16:19:20.897 [vert.x-worker-thread-0] ERROR fr.vsct.tock.bot.engine.BotVerticle - Path must start with /
+java.lang.IllegalArgumentException: Path must start with /
+	at io.vertx.ext.web.impl.RouteImpl.checkPath(RouteImpl.java:442)
+	at io.vertx.ext.web.impl.RouteImpl.<init>(RouteImpl.java:70)
+	at io.vertx.ext.web.impl.RouterImpl.route(RouterImpl.java:89)
+	at io.vertx.ext.web.impl.RouterImpl.post(RouterImpl.java:174)
+	at fr.vsct.tock.bot.connector.slack.SlackConnector$register$1.invoke(SlackConnector.kt:53)
+	at fr.vsct.tock.bot.connector.slack.SlackConnector$register$1.invoke(SlackConnector.kt:37)
+	at fr.vsct.tock.bot.engine.BotVerticle.configure(BotVerticle.kt:54)
+	at fr.vsct.tock.shared.vertx.WebVerticle$start$1.handle(WebVerticle.kt:124)
+	at fr.vsct.tock.shared.vertx.WebVerticle$start$1.handle(WebVerticle.kt:72)
+	at io.vertx.core.impl.ContextImpl.lambda$executeBlocking$1(ContextImpl.java:273)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2018-03-29T16:46:05.336 [main] INFO  fr.vsct.tock.shared.jackson.Jackson - init jackson mapper
+2018-03-29T16:46:05.929 [main] DEBUG fr.vsct.tock.bot.BotIoc - Start bot injection
+2018-03-29T16:46:06.028 [main] INFO  fr.vsct.tock.shared.Mongo - get database tock_bot
+2018-03-29T16:46:06.030 [main] INFO  fr.vsct.tock.shared.Mongo - init mongo jackson mapper with additional modules [com.fasterxml.jackson.databind.module.SimpleModule@33ecda92]
+2018-03-29T16:46:07.094 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-03-29T16:46:07.238 [main] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+2018-03-29T16:46:07.333 [cluster-ClusterId{value='5abcfc2f43dfe0197d12e4d1', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:9}] to localhost:27017
+2018-03-29T16:46:07.347 [cluster-ClusterId{value='5abcfc2f43dfe0197d12e4d1', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 3]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=10234926}
+2018-03-29T16:46:07.431 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:10}] to localhost:27017
+2018-03-29T16:46:07.966 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(messenger) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@368d5c00)
+2018-03-29T16:46:21.757 [main] INFO  fr.vsct.tock.bot.engine.config.BotConfigurationSynchronizer - start bot configuration synchronizer
+2018-03-29T16:46:24.374 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(rest) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@368d5c00)
+2018-03-29T16:46:24.376 [main] INFO  fr.vsct.tock.bot.connector.rest.RestConnector - deploy rest connector to /rest/rest-Please specify facebook page id
+2018-03-29T16:46:24.428 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(ga) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@368d5c00)
+2018-03-29T16:46:24.461 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(rest) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@368d5c00)
+2018-03-29T16:46:24.462 [main] INFO  fr.vsct.tock.bot.connector.rest.RestConnector - deploy rest connector to /rest/rest-test-bot
+2018-03-29T16:46:24.491 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(slack) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@368d5c00)
+2018-03-29T16:46:24.500 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(rest) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@368d5c00)
+2018-03-29T16:46:24.500 [main] INFO  fr.vsct.tock.bot.connector.rest.RestConnector - deploy rest connector to /rest/rest-slacktest-bot
+2018-03-29T16:46:26.217 [vert.x-worker-thread-0] INFO  fr.vsct.tock.bot.connector.messenger.MessengerConnector - deploy rest messenger connector services for root path /messenger 
+2018-03-29T16:46:26.236 [vert.x-worker-thread-0] INFO  fr.vsct.tock.bot.connector.ga.GAConnector - deploy rest google assistant services for root path /ga/test-bot 
+2018-03-29T16:46:27.328 [vert.x-eventloop-thread-1] INFO  fr.vsct.tock.bot.engine.BotVerticle - BotVerticle started on port 8181
+2018-03-29T16:51:11.221 [main] INFO  fr.vsct.tock.shared.jackson.Jackson - init jackson mapper
+2018-03-29T16:51:11.823 [main] DEBUG fr.vsct.tock.bot.BotIoc - Start bot injection
+2018-03-29T16:51:11.978 [main] INFO  fr.vsct.tock.shared.Mongo - get database tock_bot
+2018-03-29T16:51:11.979 [main] INFO  fr.vsct.tock.shared.Mongo - init mongo jackson mapper with additional modules [com.fasterxml.jackson.databind.module.SimpleModule@33ecda92]
+2018-03-29T16:51:13.064 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-03-29T16:51:13.217 [main] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+2018-03-29T16:51:13.281 [cluster-ClusterId{value='5abcfd6143dfe01a8a467f1b', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:11}] to localhost:27017
+2018-03-29T16:51:13.291 [cluster-ClusterId{value='5abcfd6143dfe01a8a467f1b', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 3]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=7550924}
+2018-03-29T16:51:13.389 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:12}] to localhost:27017
+2018-03-29T16:51:14.252 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(messenger) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@368d5c00)
+2018-03-29T16:51:18.339 [main] INFO  fr.vsct.tock.bot.engine.config.BotConfigurationSynchronizer - start bot configuration synchronizer
+2018-03-29T16:51:20.047 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(rest) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@368d5c00)
+2018-03-29T16:51:20.049 [main] INFO  fr.vsct.tock.bot.connector.rest.RestConnector - deploy rest connector to /rest/rest-Please specify facebook page id
+2018-03-29T16:51:20.064 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(ga) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@368d5c00)
+2018-03-29T16:51:20.073 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(rest) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@368d5c00)
+2018-03-29T16:51:20.073 [main] INFO  fr.vsct.tock.bot.connector.rest.RestConnector - deploy rest connector to /rest/rest-test-bot
+2018-03-29T16:51:20.094 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(slack) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@368d5c00)
+2018-03-29T16:51:20.108 [main] INFO  fr.vsct.tock.bot.engine.TockConnectorController - Register connector Connector(rest) for bot Wrapper(fr.vsct.tock.bot.definition.BotDefinitionBase@368d5c00)
+2018-03-29T16:51:20.108 [main] INFO  fr.vsct.tock.bot.connector.rest.RestConnector - deploy rest connector to /rest/rest-slacktest-bot
+2018-03-29T16:51:20.203 [vert.x-worker-thread-0] INFO  fr.vsct.tock.bot.connector.messenger.MessengerConnector - deploy rest messenger connector services for root path /messenger 
+2018-03-29T16:51:20.208 [vert.x-worker-thread-0] INFO  fr.vsct.tock.bot.connector.ga.GAConnector - deploy rest google assistant services for root path /ga/test-bot 
+2018-03-29T16:51:20.439 [vert.x-eventloop-thread-1] INFO  fr.vsct.tock.bot.engine.BotVerticle - BotVerticle started on port 8181

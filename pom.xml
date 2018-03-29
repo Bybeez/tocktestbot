@@ -31,14 +31,17 @@
             <artifactId>bot-toolkit</artifactId>
             <version>${tock}</version>
         </dependency>
-
         <dependency>
             <groupId>fr.vsct.tock</groupId>
             <artifactId>bot-test</artifactId>
             <version>${tock}</version>
             <scope>test</scope>
         </dependency>
-
+        <dependency>
+            <groupId>com.natpryce</groupId>
+            <artifactId>konfig</artifactId>
+            <version>1.6.4.0</version>
+        </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-test-junit</artifactId>
@@ -93,6 +96,15 @@
                 </configuration>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <directory>${project.basedir}</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>.secret</include>
+                </includes>
+            </resource>
+        </resources>
     </build>
 
 

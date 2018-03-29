@@ -42,7 +42,7 @@ class GreetingTest {
     }
 
     @Test
-    fun `greeting story display welcomre message with GA dedicated message when context contains a GA connector`()
+    fun `greeting story display welcome message with GA dedicated message WHEN context contains a GA connector`()
     {
         with(testBot.startNewBusMock(connectorType = gaConnectorType)) {
             firstAnswer.assertText("Bienvenue sur le test du bot Tock de Metapolis")
@@ -57,7 +57,7 @@ class GreetingTest {
     }
 
     @Test
-    fun `greeting story display welcomre message with Slacm dedicated message when context contains a Slack connector`()
+    fun `greeting story display welcome message with Slack dedicated message WHEN context contains a Slack connector`()
     {
         with(testBot.startNewBusMock(connectorType = slackConnectorType)) {
             firstAnswer.assertText("Bienvenue sur le test du bot Tock de Metapolis")

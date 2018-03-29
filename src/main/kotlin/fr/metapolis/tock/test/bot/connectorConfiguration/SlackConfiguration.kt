@@ -9,33 +9,28 @@ object SlackConfiguration {
     /**
      * The path to the bot http endppoint
      */
-    val path: String = property("/path-to-my-slack-bot-http-endpoint", "/Please specify slack bot http endpoint")
-
-    /**
-     * The bot name
-     */
-    val name : String = property("slack-bot-name", "Metapolis-bot")
+    val path: String = property("/path-to-my-slack-bot-http-endpoint", config[slack.path])
 
     /**
      * The Slack Workspace Id
      */
-    val workspaceId : String = property("workspaceId", "Please specify a workspace Id")
+    val workspaceId : String = property("workspaceId", config[slack.workspaceId])
 
     /**
      * The Slack Webhook Id
      */
-    val webhookId : String = property("webhookId", "Please specify a slack webhook id")
+    val webhookId : String = property("webhookId", config[slack.webhookId])
 
     /**
      * The Slack authentification token
      */
-    val authToken : String = property("authToken", "Please specify an authentification tocken")
+    val authToken : String = property("authToken", config[slack.authToken])
 
-    fun registerSlackConnector(){
+    fun registerSlackConnector() {
         addSlackConnector(
-                testBot.botId,
+                "slack${testBot.botId}",
                 path,
-                name,
+                testBot.botId,
                 workspaceId,
                 webhookId,
                 authToken)
