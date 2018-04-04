@@ -2,6 +2,7 @@ package fr.metapolis.tock.test.bot.story
 
 import fr.vsct.tock.bot.connector.ConnectorMessage
 import fr.vsct.tock.bot.connector.alexa.AlexaHandler
+import fr.vsct.tock.bot.connector.alexa.AlexaMessage
 import fr.vsct.tock.bot.connector.ga.GAHandler
 import fr.vsct.tock.bot.connector.ga.gaMessage
 import fr.vsct.tock.bot.connector.messenger.MessengerHandler
@@ -17,7 +18,7 @@ import fr.vsct.tock.bot.definition.storyDef
 import fr.vsct.tock.bot.engine.BotBus
 
 /**
- * Define the story, and contains entity dependent logic
+ * Define the story for the greeting intent
  */
 val greeting = storyDef<GreetingDef>(
         "greeting"){
@@ -30,6 +31,7 @@ val greeting = storyDef<GreetingDef>(
 @MessengerHandler(MessengerGreetingConnector::class)
 @GAHandler(GAGreetingConnector::class)
 @SlackHandler(SlackGreetingConnector::class)
+@AlexaHandler(AlexaGreetingConnector::class)
 class GreetingDef(bus: BotBus) : HandlerDef<GreetingConnector>(bus)
 {
     override fun answer() {
@@ -76,4 +78,13 @@ class GAGreetingConnector(context: GreetingDef) : GreetingConnector(context) {
 class SlackGreetingConnector(context: GreetingDef) : GreetingConnector(context) {
     override fun greetingMessage() : ConnectorMessage =
             textMessage("Il peut se connecter sur Slack! ${emoji(SlackEmoji.SMILE)}")
+}
+
+class AlexaGreetingConnector(context: GreetingDef) : GreetingConnector(context) {
+    override fun greetingMessage(): ConnectorMessage =
+            AlexaMessage(
+                    false,
+                    null,
+                    "Et a Alexa"
+            )
 }

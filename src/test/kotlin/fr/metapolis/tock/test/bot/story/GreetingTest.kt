@@ -2,6 +2,8 @@ package fr.metapolis.tock.test.bot.story
 
 import fr.metapolis.tock.test.bot.rule.TestBotRule
 import fr.metapolis.tock.test.bot.testBot
+import fr.vsct.tock.bot.connector.alexa.AlexaMessage
+import fr.vsct.tock.bot.connector.alexa.alexaConnectorType
 import fr.vsct.tock.bot.connector.ga.gaConnectorType
 import fr.vsct.tock.bot.connector.ga.gaMessage
 import fr.vsct.tock.bot.connector.messenger.buttonsTemplate
@@ -29,7 +31,7 @@ class GreetingTest {
     }
 
     @Test
-    fun `greeting story display welcome message with Messenger dedicated message`() {
+    fun `greeting story display welcome message with Messenger dedicated message WHEN no connector is passed to the context`() {
         with(testBot.startNewBusMock()) {
             firstAnswer.assertText("Bienvenue sur le test du bot Tock de Metapolis")
             secondAnswer.assertText("C'est un bot de test du framework Tock : https://github.com/voyages-sncf-technologies/tock")
@@ -64,6 +66,22 @@ class GreetingTest {
             secondAnswer.assertText("C'est un bot de test du framework Tock : https://github.com/voyages-sncf-technologies/tock")
             lastAnswer.assertMessage(
                     textMessage("Il peut se connecter sur Slack! ${emoji(SlackEmoji.SMILE)}")
+            )
+        }
+    }
+
+    @Test
+    fun `greeting story display welcome message with Alexa dedicated message WHEN context contains an Alexa connector`()
+    {
+        with(testBot.startNewBusMock(connectorType = alexaConnectorType)) {
+            firstAnswer.assertText("Bienvenue sur le test du bot Tock de Metapolis")
+            secondAnswer.assertText("C'est un bot de test du framework Tock : https://github.com/voyages-sncf-technologies/tock")
+            lastAnswer.assertMessage(
+                    AlexaMessage(
+                            false,
+                            null,
+                            "Et a Alexa"
+                    )
             )
         }
     }

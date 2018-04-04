@@ -4,10 +4,13 @@ import fr.metapolis.tock.test.bot.testBot
 import fr.vsct.tock.bot.connector.alexa.addAlexaConnector
 
 /**
- * Add an Alexa connector to the testBot, not yet fully implemented
+ * Contains the configuration to connect an Alexa connector to the bot
  */
 object AlexaConfiguration {
 
+    /**
+     * Add an Alexa connector to the bot
+     */
     fun registerAlexaConnector(){
         testBot.addAlexaConnector()
     }

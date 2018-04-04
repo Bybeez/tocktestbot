@@ -4,6 +4,9 @@ import fr.metapolis.tock.test.bot.testBot
 import fr.vsct.tock.bot.connector.slack.addSlackConnector
 import fr.vsct.tock.shared.property
 
+/**
+ * Contains the configuration to add a Slack connector to the bot
+ */
 object SlackConfiguration {
     /**
      * The Slack Workspace Id
@@ -20,6 +23,9 @@ object SlackConfiguration {
      */
     val authToken : String = property("authToken", config[slack.authToken])
 
+    /**
+     * Add a Slack connector to the bot
+     */
     fun registerSlackConnector() {
         testBot.addSlackConnector(
                 workspaceId,
