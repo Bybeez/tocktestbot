@@ -6,6 +6,6 @@ import fr.vsct.tock.bot.connector.ga.addGoogleAssistantConnector
 object GoogleAssistantConfiguration {
 
     fun registerGoogleAssistantConnector(){
-        addGoogleAssistantConnector(testBot.botId)
+        testBot.addGoogleAssistantConnector()
     }
 }

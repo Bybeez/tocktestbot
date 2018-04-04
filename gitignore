@@ -27,5 +27,6 @@ target
 Thumbs.db
 .vertx
 
-#Secrets
+#Secrets and logs
 .secret
+logFile.*

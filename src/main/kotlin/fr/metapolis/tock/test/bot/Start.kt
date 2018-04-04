@@ -1,5 +1,6 @@
 package fr.metapolis.tock.test.bot
 
+import fr.metapolis.tock.test.bot.connectorConfiguration.AlexaConfiguration.registerAlexaConnector
 import fr.metapolis.tock.test.bot.connectorConfiguration.GoogleAssistantConfiguration.registerGoogleAssistantConnector
 import fr.metapolis.tock.test.bot.connectorConfiguration.MessengerConfiguration.registerMessengerConnector
 import fr.metapolis.tock.test.bot.connectorConfiguration.SlackConfiguration.registerSlackConnector
@@ -23,6 +24,7 @@ object Start {
         registerMessengerConnector()
         registerGoogleAssistantConnector()
         registerSlackConnector()
+        registerAlexaConnector()
 
         registerAndInstallBot(testBot)
     }

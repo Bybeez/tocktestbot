@@ -5,12 +5,6 @@ import fr.vsct.tock.bot.connector.slack.addSlackConnector
 import fr.vsct.tock.shared.property
 
 object SlackConfiguration {
-
-    /**
-     * The path to the bot http endppoint
-     */
-    val path: String = property("/path-to-my-slack-bot-http-endpoint", config[slack.path])
-
     /**
      * The Slack Workspace Id
      */
@@ -27,10 +21,7 @@ object SlackConfiguration {
     val authToken : String = property("authToken", config[slack.authToken])
 
     fun registerSlackConnector() {
-        addSlackConnector(
-                "slack${testBot.botId}",
-                path,
-                testBot.botId,
+        testBot.addSlackConnector(
                 workspaceId,
                 webhookId,
                 authToken)

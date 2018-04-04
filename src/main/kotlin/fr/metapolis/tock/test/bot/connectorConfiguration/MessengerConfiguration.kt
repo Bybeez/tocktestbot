@@ -27,11 +27,10 @@ object MessengerConfiguration {
     val webhookVerifyToken: String = property("tock_bot_open_data_webhook_verify_token", "Please specify messenger webhook verify token")
 
     fun registerMessengerConnector() {
-        addMessengerConnector(
+        testBot.addMessengerConnector(
                 pageId,
                 pageToken,
                 applicationSecret,
-                webhookVerifyToken,
-                name = testBot.botId)
+                webhookVerifyToken)
     }
 }

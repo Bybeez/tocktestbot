@@ -15,56 +15,65 @@
         <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
         <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
 
-        <kotlin>1.2.30</kotlin>
-        <tock>0.9.3-SNAPSHOT</tock>
+        <kotlin>1.2.31</kotlin>
+        <tock>0.9.4-SNAPSHOT</tock>
         <guava>24.0-jre</guava>
 
         <junit>4.12</junit>
+        <tock-test>0.9.3</tock-test>
 
         <kotlin.compiler.jvmTarget>1.8</kotlin.compiler.jvmTarget>
-        <kotlin.version>1.2.30</kotlin.version>
+        <kotlin.version>1.2.31</kotlin.version>
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>fr.vsct.tock</groupId>
             <artifactId>bot-toolkit</artifactId>
             <version>${tock}</version>
         </dependency>
+
         <dependency>
             <groupId>fr.vsct.tock</groupId>
             <artifactId>bot-test</artifactId>
-            <version>${tock}</version>
+            <version>${tock-test}</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>com.natpryce</groupId>
             <artifactId>konfig</artifactId>
             <version>1.6.4.0</version>
         </dependency>
+
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-test-junit</artifactId>
             <version>${kotlin}</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit}</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib-jdk8</artifactId>
             <version>${kotlin.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-test</artifactId>
             <version>${kotlin.version}</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <build>

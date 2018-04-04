@@ -1,6 +1,7 @@
 package fr.metapolis.tock.test.bot.story
 
 import fr.vsct.tock.bot.connector.ConnectorMessage
+import fr.vsct.tock.bot.connector.alexa.AlexaHandler
 import fr.vsct.tock.bot.connector.ga.GAHandler
 import fr.vsct.tock.bot.connector.ga.gaMessage
 import fr.vsct.tock.bot.connector.messenger.MessengerHandler
@@ -32,9 +33,9 @@ val greeting = storyDef<GreetingDef>(
 class GreetingDef(bus: BotBus) : HandlerDef<GreetingConnector>(bus)
 {
     override fun answer() {
-        send("Bienvenue sur le test du bot")
+        send("Bienvenue sur le test du bot Tock de Metapolis")
         send("C'est un bot de test du framework Tock : https://github.com/voyages-sncf-technologies/tock")
-        connector?.sendGreetingMessage()
+        connector?.sendGreetingMessage()  /** If there is a connector, uses it to send a message using the GreetingConnector sealed class **/
         end()
     }
 }
