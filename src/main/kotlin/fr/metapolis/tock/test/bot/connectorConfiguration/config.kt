@@ -8,4 +8,11 @@ object slack : PropertyGroup() {
     val authToken by stringType
 }
 
+object messenger : PropertyGroup() {
+    val pageId by stringType
+    val pageToken by stringType
+    val applicationSecret by stringType
+    val webhookVerifyToken by stringType
+}
+
 val config = ConfigurationProperties.fromResource(".secret")
